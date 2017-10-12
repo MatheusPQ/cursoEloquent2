@@ -1,0 +1,22 @@
+$text = App\Text::create([])
+$image = App\Image::create([])
+$text->likes()->create([])
+    Cria um like
+$text->likes
+    Mostra a lista de likes
+$text->likes()->count()
+    Conta o número de likes
+$image->likes()->create([])
+$image->likes()->create([])
+$image->likes
+    Mostra os dois likes criados
+$like = App\Like::find(3)
+    Mostra o like de ID 3
+    Likeable ID 1, do tipo Image(Model Image)
+$like->Likeable
+    Retorna o model de imagens (?)
+
+App\Tag::all() //Após criar as tags, texts e imagens
+$text->tags()->sync([1,2])
+$text->tags
+$image->tags()->attach([2])
